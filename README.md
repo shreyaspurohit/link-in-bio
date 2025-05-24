@@ -1,6 +1,8 @@
 # link-in-bio
 A NextJS Link In Bio
 
+Feel free to use this as an template to create your own bio sites.
+
 ## Getting Started
 
 First, run the development server:
