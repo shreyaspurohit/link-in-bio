@@ -31,7 +31,7 @@ export default function RootLayout({
         <meta name="google" content="nositelinkssearchbox" />
       </Head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`} data-theme="burgundy"
       >
         {children}
       </body>

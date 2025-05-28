@@ -2,20 +2,65 @@
 @plugin 'phosphor-icons-tailwindcss';
 
 :root {
-  --background: #710E0E;
-  --foreground: #FAF0E6;
+  --background-color-theme: hsl(0, 78%, 25%);
+  --foreground-color-theme: hsl(30, 67%, 94%);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-background-theme: var(--background-color-theme);
+  --color-foreground-theme: var(--foreground-color-theme);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  --color-burgandy: #710E0E;
+  --color-burgundy: hsl(0, 78%, 25%);
+  --color-light-peach: hsl(359.98, 99%, 94%);
+  --color-linen: hsl(30, 67%, 94%);
+  --color-silver: hsl(200, 0%, 77%);
+  --color-onyx: hsl(195, 4%, 22%);
+  --color-fern: hsl(106, 29%, 37%);
+  --color-mulberry: hsl(328, 51%, 53%);
+  --color-eggplant: hsl(329, 20%, 32%);
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer theme {
+  [data-theme="burgundy"] {
+    --background-color-theme: var(--color-burgundy);
+    --foreground-color-theme: var(--color-light-peach);
+    --tt-background-color: var(--color-burgundy);
+    --tt-foreground-color: var(--color-light-peach);
+  }
+
+  [data-theme="silver"] {
+    --background-color-theme: var(--color-silver);
+    --foreground-color-theme: black;
+    --tt-background-color: var(--color-silver);
+    --tt-foreground-color: black;
+  }
+
+  [data-theme="fern"] {
+    --background-color-theme: var(--color-fern);
+    --foreground-color-theme: var(--color-linen);
+    --tt-background-color: var(--color-fern);
+    --tt-foreground-color: var(--color-linen);
+  }
+
+  [data-theme="mulberry"] {
+    --background-color-theme: var(--color-mulberry);
+    --foreground-color-theme: var(--color-linen);
+    --tt-background-color: var(--color-mulberry);
+    --tt-foreground-color: var(--color-linen);
+  }
+
+  [data-theme="eggplant"] {
+    --background-color-theme: var(--color-eggplant);
+    --foreground-color-theme: var(--color-linen);
+    --tt-background-color: var(--color-eggplant);
+    --tt-foreground-color: var(--color-linen);
+  }
+
+  [data-theme="onyx"] {
+    --background-color-theme: var(--color-onyx);
+    --foreground-color-theme: var(--color-linen);
+    --tt-background-color: var(--color-onyx);
+    --tt-foreground-color: var(--color-linen);
+  }
 }

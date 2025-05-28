@@ -37,7 +37,7 @@ export default function Links({nativeShareTitle, horizontalLinks, verticalLinks,
             title={link.title}
             key={link.id}
             href={link.url} //  transition-opacity 
-            className="flex items-center border-2 rounded-2xl px-4 py-4 md:w-md text-red-100 gap-12 duration-300 transition-transform hover:scale-105 opacity-80 hover:opacity-100 hover:bg-neutral-50/20 cursor-pointer"
+            className="flex items-center border-2 rounded-2xl px-4 py-4 md:w-md gap-12 duration-300 transition-transform hover:scale-105 opacity-80 hover:opacity-100 hover:bg-neutral-50/20 cursor-pointer"
             target="_blank"
           >
             <div className="flex-1 mr-auto">
