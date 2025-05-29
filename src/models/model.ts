@@ -28,3 +28,5 @@ export type Config = {
     horizontalLinks?: HeaderLink[];
     verticalLinks: Link[];
 };
+
+export const themes = ["burgundy", "silver", "fern", "mulberry", "eggplant", "onyx"];

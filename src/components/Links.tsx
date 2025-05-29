@@ -7,7 +7,7 @@ import Link from 'next/link';
 export default function Links({nativeShareTitle, horizontalLinks, verticalLinks, downloadUrl} : Config & {downloadUrl: string}) {
 
   return (
-    <div className="flex flex-col gap-4 mt-1 items-center box-border"> 
+    <div className="flex-col-center gap-4 mt-1 box-border"> 
       <div className="flex flex-row flex-nowrap gap-2 mt-1 items-center">        
         <VCard downloadUrl={downloadUrl}/>
         {horizontalLinks?.map((link) => (
